@@ -57,8 +57,8 @@ const getRandomisedGIF = async () => {
 };
 
 const job = new CronJob(
-    "0 0 9-17 * * 1-5",
-//   "*/5 * * * * *",
+    "0 9-17 * * 1-5",
+//   "*/5 * * * *",
   async () => {
     console.log("Starting ", new Date());
     const gif = await getRandomisedGIF();
